@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Victor Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+
+  <form action="submit" id="survey-form">
+    <div class="form-group">
+        <label for="name" 
+        id="name-label">Name: </label>
+        <input type="text" 
+        id="name" 
+        placeholder="Enter your name" 
+        required>
+    </div>
+    <div class="form-group">
+        <label for="email" 
+        id="email-label">Email: </label>
+        <input type="email" 
+        id="email" 
+        placeholder="Enter your email" 
+        required>
+    </div>
+    <div class="form-group">
+        <label for="number" 
+        id="number-label">Age: </label>
+        <input type="number" 
+        min="1" 
+        max="100" 
+        id="number" 
+        placeholder="Enter your age" 
+        required>
+    </div>
+    <div class="form-group">
+          <p>Which option do you think is the best programming language</p>
+          <select name="role" id="dropdown">
+              <option value="Javascript">Javascript</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="PHP">PHP</option>
+              <option value="Python">Python</option>
+              <option value="C#">C#</option>
+          </select>
+    </div>
+    <div class="form-group">
+          <p>Do you work with programming languages ?</p>
+          <label>
+              <input name="user-work" 
+              class="input-radio" 
+              type="radio" 
+              value="yes" 
+              checked>
+              Yes
+          </label>
+          <label>
+            <input name="user-work" 
+            class="input-radio" 
+            type="radio" 
+            value="no">
+            No
+        </label>
+    </div>
+    <div class="form-group">
+        <p>Which programming languages do you use ?</p>
+        <label>
+            <input type="checkbox" 
+            id="javascript" 
+            value="javascript" 
+            name="javascript">
+            Javascript
+        </label>
+        <label>
+            <input type="checkbox" 
+            id="HTML" 
+            value="HTML" 
+            name="HTML">
+            HTML
+        </label>
+        <label>
+            <input type="checkbox" 
+            id="CSS" 
+            value="CSS" 
+            name="CSS">
+            CSS
+        </label>
+        <label>
+            <input type="checkbox" 
+            id="PHP" 
+            value="PHP" 
+            name="PHP">
+            PHP
+        </label>       
+    </div>
+    <div class="form-group">
+          <p>Any comments or suggestions ?</p>
+          <textarea name="comment" 
+          id="comment" 
+          cols="30" 
+          rows="6" 
+          placeholder="Tap here your comment"></textarea>
+    </div>
+    <div class="form-group">
+        <button id="submit">Submit</button>
+    </div>
+  </form>
+
+</body>
+</html>

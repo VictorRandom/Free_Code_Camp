@@ -1,0 +1,59 @@
+:root{
+    position:absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Noto Sans Mono', monospace;
+
+    background-color: blueviolet;
+}
+
+header{
+    text-align:center;
+}
+
+#survey-form{
+    background-color: rgba(27, 27, 50, 0.8);
+    
+    padding: 20px;
+    
+    border-radius: 10px;
+}
+
+label, p{
+    color: white;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+#name, #number, #email {
+    height: 20px;
+    margin-top: 5px;
+}
+
+#dropdown{
+    height: 30px;
+    border-radius: 5px;
+}
+
+input, textarea {
+    border-radius: 5px;
+}
+
+#submit{
+    background-color: #37af65;
+    color:white;
+
+    border-radius: 5px;
+
+    height: 50px;
+
+    margin-top: 10px;
+
+    font-size: 120%;
+}
