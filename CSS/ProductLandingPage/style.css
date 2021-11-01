@@ -1,0 +1,129 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+  #header{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+  }
+  
+  #nav-bar{
+    padding: 10px;
+    margin-top: 7px;
+  }
+
+  ul{
+    list-style: none;
+    width: 100%;
+  }
+
+  li{
+    display: inline;
+    margin: 10px;
+    background-color: #111;
+
+  }
+  
+  a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+  }
+  
+  #header-img{
+    width: 100px;
+  }
+
+  main{
+    top: 100px;
+    text-align: center;
+    position: relative;
+  }
+
+
+  #form{
+    margin:15px;
+
+  }
+
+  #submit{
+    background: #f1c40f;
+    border: 0;
+    width: 10%;
+    height: 30px;
+    border-radius: 5px;
+  }
+  
+  #email{
+    height: 30px;
+    width: 25%;
+    border-radius: 5px;
+    border: 1;
+  }
+
+  section{
+    margin: 50px;
+  }
+
+  .feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  #best, #shipping{
+    width: 250px;
+  }
+
+  #pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .sell-box{
+    border: 1px solid;
+    margin: 10px;
+    padding: 50px 40px 50px 40px;
+  }
+
+  #pricing button{
+    background: #f1c40f;
+    border: 0;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  /* RESPONSIVE ===================================================== */
+
+  li:hover{
+    background-color: #333;
+  }
+
+  @media (min-width: 768px) {
+    main{
+      top: 120px;
+    }
+  }
