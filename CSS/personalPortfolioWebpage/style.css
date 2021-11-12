@@ -1,0 +1,90 @@
+
+*{
+    font-family: 'Yuji Boku', serif;
+
+}
+
+#conteiner{
+    position: absolute;
+
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
+}
+
+#welcome-section{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+    text-align: center;
+
+}
+
+#projects{
+    height:100vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 50vh 50vh;
+    grid-template-columns: 50% 50%;
+
+    text-align: center;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #095256;
+
+    border: 1px solid;
+}
+
+.project-title{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+
+    
+}
+
+
+#contact{
+    height:100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    grid-template-rows: 50vh 50vh;
+    grid-template-columns: 50vw 50vw;
+
+    text-align: center;
+
+
+    background-color: #087f8c;
+}
+
+#contact-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 50px;
+}
+
+a{
+    color: black;
+    font-size: 2rem;
+}
