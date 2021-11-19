@@ -1,6 +1,6 @@
 function rot13(str) {
 
-    let frase = ''
+    let frase = '' 
     str = str.split("")
 
     for (let i = 0; i < str.length; i++) {
